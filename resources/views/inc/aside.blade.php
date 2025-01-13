@@ -25,7 +25,12 @@
                 Contact
             </x-nav-link>
         </li>
-
+        <li>
+            <x-nav-link href="/jobs" :active="request()->is('jobs')">
+                <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#cjobs"></use></svg>
+                Jobs
+            </x-nav-link>
+        </li>
     </ul>
     <hr>
     <div class="dropdown">

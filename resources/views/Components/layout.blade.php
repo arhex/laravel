@@ -9,9 +9,15 @@
 </head>
 <body>
 @include('inc.header')
-{{ $slot }}
+<div class="d-flex">
+    <div class="d-flex flex-column flex-shrink-0 p-3 " style="width: 280px;">
+        @include('inc.aside')
+    </div>
 
-@include('inc.aside')
+    <div class="p-3 p-3-text">
+        {{ $slot }}
+    </div>
+</div>
 
 @include('inc.footer')
 </body>
